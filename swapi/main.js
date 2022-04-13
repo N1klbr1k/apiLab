@@ -17,6 +17,9 @@ const swapiCall = (evt) => {
                })
         }
     } )
+    .catch(err => {
+        console.log(err)
+    })
 }
 
 getResBtn.addEventListener('click', swapiCall)
